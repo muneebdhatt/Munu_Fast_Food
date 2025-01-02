@@ -9,9 +9,8 @@ from accounts.views import signup
 
 def index(request):
     #return HttpResponse('this is homepage.')
-    if request.user.is_anonymous:
-        return redirect("login")
-    return render(request,"index.html")
+
+    return render(request,"logout-index.html")
 
 def menu(request):
     return render(request,"menu.html")
@@ -39,7 +38,7 @@ def loginuser(request):
         if user is not None:
             # A backend authenticated the credentials
             login(request, user)
-            return redirect("/")
+            return render(request,"index.html")
         else:
             # No backend authenticated the credentials
             return render(request,"login.html")
@@ -48,4 +47,4 @@ def loginuser(request):
 
 def logoutuser(request):
     logout(request)
-    return redirect("/login")
+    return render(request,"logout-index.html")
