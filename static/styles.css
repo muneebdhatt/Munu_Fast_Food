@@ -1,0 +1,154 @@
+/* General card adjustments */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Dropdown full height only on larger screens */
+  @media (min-width: 768px) {
+    .full-height-dropdown {
+      height: 100vh;
+      overflow-y: auto;
+    }
+  }
+  
+  /* Adjust button sizes on smaller screens */
+  @media (max-width: 576px) {
+    .btn-warning {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+  
+  /* Fix carousel images for responsiveness */
+  .carousel-img {
+    object-fit: cover;
+    height: auto;
+  }
+
+
+.menu-first-container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow, if necessary */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+}
+
+@media (max-width: 1399px) and (max-height: 854px) {
+    .menu-first-container{
+    width: 2500px;
+    min-height: 600px;
+}}
+
+
+@media (max-width: 1198px) and (max-height: 854px) {
+    .menu-first-container{
+        width: 2500px;
+        min-height: 600px;
+    }}
+
+@media (max-width: 991px) and (max-height: 854px) {
+    .menu-first-container{
+        width: 2500px;
+        min-height: 600px;
+    }}
+
+@media (max-width: 899px) and (max-height: 854px) {
+    .menu-first-container{
+        width: 2500px;
+        min-height: 600px;
+    }    
+}
+@media (max-width: 880px) and (max-height: 854px) {
+    .menu-first-container{
+        width: 2500px;
+        min-height: 600px;
+    }
+
+    
+}
+.menu-first-container h3 {
+    text-align: center;
+}
+
+.menu-first-container .row {
+    justify-content: center;
+}
+
+
+
+/* .carousel-item .row{
+    justify-content: center !important;
+} */
+
+.menu{
+    width: 300px;
+}
+.menu_img{
+    width: 30px;
+}
+.full-height-dropdown {
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Add scroll if the content overflows */
+}
+.no-scroll {
+    overflow: hidden; /* Prevent scrolling */
+    height: 100%;    /* Ensure the body doesn't scroll */
+}
+
+.card-border{
+    border-color: yellow;
+    border-radius: 20px;
+}
+
+.carousel-img {
+    height: 1100px;
+    object-fit: cover;
+  }
+
+.menu_card{
+    height:200px
+}
+
+.card_text_color{
+    background: none;
+}
+.menuhead_bg{
+    /* background: red; */
+    background-color: rgb(248, 248, 248);
+}
+.bazooka-color{
+    color: rgb(241, 91, 37);
+}
+.bazooka-bg{
+    background: rgb(241, 91, 37);
+}
+.sp-button{
+    border-radius: 50px;
+}
+/* button:hover{
+    background: rgb(241, 91, 37);
+} */
+.cart-button{
+    border: none;
+}
+
+@media (max-width: 576px) {
+    .btn-warning {
+      font-size: 14px; /* Adjust button text size */
+      padding: 5px 10px; /* Adjust padding */
+    }
+  }
+
+
+/* .menu-button{
+    width: 150px; 
+    height: 50px; 
+} */
+

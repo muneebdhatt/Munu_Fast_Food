@@ -1,0 +1,187 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Munus Fast Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="{% static 'images/menu-main.png' %}" alt="Menu Icon">
+        </button>
+        <ul class="dropdown-menu full-height-dropdown">
+          <div class="menu d-flex align-items-start mx-4">
+            <img src="{% static 'images/user.png' %}" class="w-25 me-3 my-2" alt="User Icon">
+            <div>
+              <p class="my-3">Login to explore</p>
+              <p class="my-3">World to explore</p>
+            </div>
+          </div>
+          <div class="mx-4">
+            <button type="submit" class="btn btn-outline-dark px-3"><b>Login</b></button>
+            <hr>
+            <div class="d-flex align-items-center">
+              <img src="{% static 'images/menu.png' %}" alt="" class="menu_img">
+              <a href="/menu" class="text-black text-decoration-none mx-4">Explore Menu</a>
+            </div>
+            <br>
+            <div class="d-flex align-items-center">
+              <img src="{% static 'images/market.png' %}" alt="" class="menu_img">
+              <a href="/" class="text-black text-decoration-none mx-4">Branch Locator</a>
+            </div>
+            <hr>
+            <a href="/" class="text-black text-decoration-none">Blog</a>
+            <br>
+            <a href="/" class="text-black text-decoration-none">Privacy Policy</a>
+          </div>
+        </ul>
+      </div>
+      <a class="navbar-brand mx-2 text-black" href="/">
+        <img src="{% static 'images/logo.jpg' %}" alt="Logo" height="30px">
+        Munu's Fast Food
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item mx-2">
+            <a href="/login">
+              <button type="button" class="btn btn-warning">
+                <img src="{% static 'images/contact.png' %}" alt="Contact Icon">
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4 py-4 menuhead_bg">
+    <div class="d-flex justify-content-center align-items-center flex-wrap">
+      <a href="#Bhook" class="btn btn-warning mx-2 mb-2">Bhook Ka The End!</a>
+      <a href="#starters" class="btn btn-warning mx-2 mb-2">Starters</a>
+      <a href="#local" class="btn btn-warning mx-2 mb-2">Somewhat Local</a>
+      <a href="#sooper" class="btn btn-warning mx-2 mb-2">Somewhat Sooper</a>
+    </div>
+  </div>
+
+  <div class="container menu-first-container">
+    <h3 id="Bhook">Bhook Ka The End!</h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/bazooka.jpeg' %}" class="card-img-top" alt="Bazooka">
+          <div class="card-body">
+            <h4 class="card-title">Bazooka</h4>
+            <p class="card-text">Tender, spicy chicken strips paired with mayo, pickles, jalapeños...</p>
+            <div class="d-flex justify-content-between">
+              <h4 class="text-warning">Rs 600</h4>
+              <span class="badge bg-warning text-dark">Starting Price</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <h3 id="starters">Starters</h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/baked-wings.jpeg' %}" class="card-img-top" alt="Oven Baked Wings">
+          <div class="card-body">
+            <h4 class="card-title">Oven Baked Wings</h4>
+            <p class="card-text">Fresh Oven baked wings served with Dip Sauce.</p>
+            <div class="d-flex justify-content-between">
+              <h4 class="text-warning">Rs 600</h4>
+              <span class="badge bg-warning text-dark">Starting Price</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/flaming-wings.jpeg' %}" class="card-img-top" alt="Flaming Wings">
+          <div class="card-body">
+            <h4 class="card-title">Flaming Wings</h4>
+            <p class="card-text">Fresh Oven baked wings served with Dip Sauce.</p>
+            <div class="d-flex justify-content-between">
+              <h4 class="text-warning">Rs 600</h4>
+              <span class="badge bg-warning text-dark">Starting Price</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <h3 id="local">Somewhat Local</h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/chicken-tikka.jpeg' %}" class="card-img-top" alt="Chicken Tikka">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Tikka</h4>
+            <p class="card-text">Tender chunks of Marinated Grilled Chicken with Savory Onion.</p>
+            <div class="d-flex justify-content-between">
+              <h4 class="text-warning">Rs 690</h4>
+              <span class="badge bg-warning text-dark">Starting Price</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/chicken-fajita.jpeg' %}" class="card-img-top" alt="Chicken Fajita">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Fajita</h4>
+            <p class="card-text">An authentic taste of fajita marinated Chicken, Onion and Bell Peppers.</p>
+            <div class="d-flex justify-content-between">
+              <h4 class="text-warning">Rs 690</h4>
+              <span class="badge bg-warning text-dark">Starting Price</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <h3 id="sooper">Somewhat Sooper</h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/euro-pizza.jpeg' %}" class="card-img-top" alt="Euro Pizza">
+          <div class="card-body">
+            <h4 class="card-title">Euro</h4>
+            <p class="card-text">A delightful combination of specially Marinated Smoked Chicken...</p>
+            <div class="d-flex justify-content-between">
+              <h4 class="text-warning">Rs 690</h4>
+              <span class="badge bg-warning text-dark">Starting Price</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
